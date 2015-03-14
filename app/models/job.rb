@@ -1,4 +1,4 @@
 class Job < ActiveRecord::Base
-  validates :title, presence: true
+  validates_presence_of :title, presence: true
   validates :description, presence: true
 end
