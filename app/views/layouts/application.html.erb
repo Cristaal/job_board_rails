@@ -7,6 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <div CLASS="left-nav">
+    <ul>
+      <li><%= link_to "Home", jobs_path %></li>
+    </ul>
+  </div>
+  <div class="right-nav">
+    <ul>
+      <li><%= link_to "Add Job", new_job_path %></li>
+    </ul>
+  </div>
+  <div class="clearfix"></div>
+</header>
 
 <%= yield %>
 
