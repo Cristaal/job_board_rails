@@ -17,7 +17,11 @@ class JobsController < ApplicationController
     @job.update_attributes(job_params)
     redirect_to jobs_path
   end
-
+  def destroy
+    @job = Job.find(params[:id])
+    @job.destroy
+    redirect_to jobs_path
+  end
   private
 
   def job_params
