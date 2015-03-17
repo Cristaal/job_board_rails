@@ -1,5 +1,6 @@
 <h1><%= @job.title %></h1>
 <h4><%= @job.description %></h4>
 
-<h5><%= link_to "Edit Posting", edit_job_path(@job)%></h5>
+<h5><%= link_to 'Edit Posting', edit_job_path(@job)%></h5>
 <h5><%= link_to 'Delete Posting', @job, method: :delete %></h5>
+<h5><%= link_to 'Home', root_path %></h5>
