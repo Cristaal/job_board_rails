@@ -10,6 +10,7 @@ class JobsController < ApplicationController
   def create
     @job = Job.new(job_params)
     if @job.save
+      flash[:notice] = "Job Listing Successfully Created"
       redirect_to jobs_path
     else
       render :new

@@ -20,9 +20,11 @@
   </div>
   <div class="clearfix"></div>
 </header>
+<div class="flash">
 <% flash.each do |name, msg| %>
   <%= content_tag :div, msg, id: "flash_#{name}" %>
 <% end %>
+</div>
 <div class="container">
 <%= yield %>
 </div>
